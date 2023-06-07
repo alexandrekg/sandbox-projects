@@ -12,3 +12,10 @@ print('My first name :' + first_arg)
 second_arg = sys.argv[2]
 print('My last name :' + second_arg)
 
+"""
+[master][~/workspace/sandbox-projects/python-projects/getting-args-using-sys]$ python example-without-method.py Alexandre Giacobo                        
+['example-without-method.py', 'Alexandre', 'Giacobo']
+Script name :example-without-method.py
+My first name :Alexandre
+My last name :Giacobo
+"""
