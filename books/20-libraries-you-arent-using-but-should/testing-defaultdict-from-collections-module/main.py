@@ -1,3 +1,5 @@
+from collections import defaultdict
+
 
 def main(arg):
     if 'not' in arg:
@@ -10,12 +12,14 @@ def main(arg):
 
 
 def _not_using_default_dict(arg):
-    return arg
+    d = {}
+    return d[arg]
 
 
 def _using_default_dict(arg):
-    return True
+    d = defaultdict(list)
+    return d[arg]
 
 
 if __name__ == '__main__':
-    main('not default')
+    main('default')
