@@ -10,5 +10,10 @@ def main():
     print(named_tuple_response)
 
 
+def _get_normal_tuple_response(name, birth_year, current_year, current_role):
+    age = current_year - birth_year
+    return name, age, current_role
+
+
 if __name__ == "__main__":
     main()
