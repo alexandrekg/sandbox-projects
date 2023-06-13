@@ -4,7 +4,8 @@ def main():
         file_data = file.readlines()
         total_lines = len(file_data)
         total_words = len([word for row in file_data for word in row.split(" ")])
-        print(total_words)
+        total_characters = len(file_data)
+        print("Line count: ", total_lines)
     return True
 
 
