@@ -1,8 +1,10 @@
 def main():
     file_name = input('Please input the file name with the extension. Ex: data.txt  ')
     with open(file_name) as file:
-        file_data = file.read()
-        print(file_data)
+        file_data = file.readlines()
+        total_lines = len(file_data)
+        total_words = len([word for row in file_data for word in row.split(" ")])
+        print(total_words)
     return True
 
 
