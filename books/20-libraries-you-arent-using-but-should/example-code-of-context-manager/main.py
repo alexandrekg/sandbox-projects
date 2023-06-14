@@ -11,12 +11,7 @@ def timing(label: str):
 
 
 with timing('Array tests') as total:
-    with timing('Array creation innermul') as inner:
-        x = array('d', [0] * 1000000)
-    with timing('Array creation outermul') as outer:
-        x = array('d', [0]) * 1000000
+    x = array('d', [0] * 1000000)
 
 
 print('Total [%s]: %.6f s' % total())
-print('Timing [%s]: %.6f s' % inner())
-print('Timing [%s]: %.6f s' % outer())
