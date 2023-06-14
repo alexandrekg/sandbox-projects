@@ -11,6 +11,7 @@ def timing_func(func):
     return wrapper
 
 
+@timing_func
 def my_function():
     # code to be timed
     print("Executing my function...")
@@ -19,5 +20,4 @@ def my_function():
 
 
 if __name__ == "__main__":
-    timed_function = timing_func(my_function)
-    timed_function()
+    my_function()
