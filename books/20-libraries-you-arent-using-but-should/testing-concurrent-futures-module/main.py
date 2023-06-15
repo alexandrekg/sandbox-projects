@@ -1,5 +1,6 @@
 from concurrent.futures import ThreadPoolExecutor as Executor
-
+# to use process instead of threads
+# from concurrent.futures import ProcessPoolExecutor as Executor
 
 urls = """google reddit facebook youtube""".split()
 
