@@ -5,6 +5,9 @@ logger = logging.getLogger()
 
 
 def blah():
+    logger.info('blah')
+    logger.warning('Warning')
+    logger.debug('Debug')
     return 'blah'
 
 
@@ -16,3 +19,7 @@ if __name__ == "__main__":
                         help='Set the logging level')
     args = parser.parse_args()
     logging.basicConfig(level=args.loglevel)
+    blah()
+
+# python main.py -ll DEBUG
+# python main.py -ll INFO
