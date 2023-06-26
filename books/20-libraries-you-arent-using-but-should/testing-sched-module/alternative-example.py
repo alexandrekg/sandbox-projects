@@ -2,7 +2,7 @@ import sched
 import time
 from datetime import datetime, timedelta
 
-
+# instancing scheduler class with current time
 scheduler = sched.scheduler(timefunc=time.time)
 
 def reschedule():
