@@ -1,6 +1,5 @@
 import sched
 import time
-from datetime import datetime, timedelta
 
 scheduler = sched.scheduler(timefunc=time.time)
 
