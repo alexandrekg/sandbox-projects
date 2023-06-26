@@ -5,8 +5,13 @@ scheduler = sched.scheduler(timefunc=time.time)
 
 
 def saytime():
-    print(time.ctime())
-    scheduler.enter(10, priority=0, action=saytime())
+    """
+    ctime() represents a second formatted date in a local time string
+    Ex using .ctime(): Mon Jun 26 20:37:32 2023
+    Ex using .time(): 1687822783.908726
+    """
+    print(time.time())
+    # scheduler.enter(10, priority=0, action=saytime())
 
 
 saytime()
