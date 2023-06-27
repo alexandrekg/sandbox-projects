@@ -7,8 +7,10 @@ messages = [
     'blah blah blah'
 ]
 
+
 def main():
-    print('Hello World')
+    for m in messages:
+        print(m)
 
 
 if __name__ == "__main__":
