@@ -1,4 +1,7 @@
 from colorama import init, Fore, Back, Style
+
+# if we don't use autoreset, the second 'blah blah blah' string, will have the same color and background-color
+# specified in the second string
 init(autoreset=True)
 
 messages = [
