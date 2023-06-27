@@ -2,6 +2,7 @@ from colorama import init, Fore, Back, Style
 
 # if we don't use autoreset, the second 'blah blah blah' string, will have the same color and background-color
 # specified in the second string
+# When the code is running on Windows, we still have to use init() for mapping ANSI colors
 init(autoreset=True)
 
 messages = [
