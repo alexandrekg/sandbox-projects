@@ -10,6 +10,13 @@ def reschedule():
     new_target = datetime.now().replace(second=0, microsecond=0)
     # increments one minute
     new_target += timedelta(minutes=1)
+
+    """
+    enterabs - it's used to schedule an event at an absolute time, specified as a timestamp
+    timestamp - transform the date into seconds, example: 
+        Before: datetime.datetime(2023, 6, 26, 21, 39, 14, 717985)  
+        After: 1687826354.717985
+    """
     scheduler.enterabs(new_target.timestamp(), priority=0, action=saytime)
 
 def saytime():
