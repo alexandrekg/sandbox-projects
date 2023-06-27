@@ -21,5 +21,6 @@ def saytime():
 reschedule()
 try:
     scheduler.run(blocking=True)
+# This exception is when we type CTRL+C for example
 except KeyboardInterrupt:
     print('Stopped.')
