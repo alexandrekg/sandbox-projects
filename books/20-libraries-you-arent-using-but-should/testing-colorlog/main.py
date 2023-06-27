@@ -10,7 +10,11 @@ logger.addHandler(handler)
 
 
 def main():
-    print('Hi')
+    logger.debug("Debug message")
+    logger.info("Information message")
+    logger.warning("Warning message")
+    logger.error("Error message")
+    logger.critical("Critical message")
 
 
 if __name__ == "__main__":
