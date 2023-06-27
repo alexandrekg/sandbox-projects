@@ -11,6 +11,7 @@ def reschedule():
     scheduler.enterabs(new_target.timestamp(), priority=0, action=saytime)
 
 def saytime():
+    # the flush argument, forces the print to return and display the text immediately without a delay
     print(time.ctime(), flush=True)
     reschedule()
 
