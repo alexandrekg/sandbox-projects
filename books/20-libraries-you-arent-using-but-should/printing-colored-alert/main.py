@@ -1,3 +1,5 @@
+from colorama import init, Fore, Back, Style
+init(autoreset=True)
 
 def main():
     print('Hello World')
