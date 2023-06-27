@@ -13,7 +13,7 @@ def reschedule():
 
     """
     enterabs - it's used to schedule an event at an absolute time, specified as a timestamp
-    timestamp - transform the date into seconds, ex: 
+    timestamp - transform the date into seconds, example: 
         Before: datetime.datetime(2023, 6, 26, 21, 39, 14, 717985)  
         After: 1687826354.717985
     """
