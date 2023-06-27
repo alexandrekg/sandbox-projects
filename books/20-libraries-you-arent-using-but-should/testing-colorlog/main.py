@@ -1,5 +1,6 @@
 import colorlog
 
+# specifying log level as DEBUG
 logger = colorlog.getLogger()
 logger.setLevel(colorlog.DEBUG)
 
