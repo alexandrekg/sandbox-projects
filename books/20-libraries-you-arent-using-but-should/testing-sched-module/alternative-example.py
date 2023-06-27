@@ -8,6 +8,7 @@ scheduler = sched.scheduler(timefunc=time.time)
 def reschedule():
     # this will create an instance of datetime.now() but with second and microseconds with 0 value
     new_target = datetime.now().replace(second=0, microsecond=0)
+    # increments one minute
     new_target += timedelta(minutes=1)
     scheduler.enterabs(new_target.timestamp(), priority=0, action=saytime)
 
