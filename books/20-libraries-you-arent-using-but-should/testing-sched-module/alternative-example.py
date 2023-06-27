@@ -20,6 +20,7 @@ def saytime():
 
 reschedule()
 try:
+    # start of the event loop
     scheduler.run(blocking=True)
 # This exception is when we type CTRL+C for example
 except KeyboardInterrupt:
