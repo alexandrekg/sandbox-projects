@@ -9,7 +9,7 @@ for value in simple_generator_fun():
     print(value)
 
 """
-/usr/bin/python3.10 /home/alexkg/workspace/sandbox-projects/books/20-libraries-you-arent-using-but-should/simple-generator-with-yield/main.py 
+/usr/bin/python3.10 /home/alexkg/workspace/sandbox-projects/books/20-libraries-you-arent-using-but-should/simple-generator-with-yield/cpu-load-example.py 
 2
 4
 6

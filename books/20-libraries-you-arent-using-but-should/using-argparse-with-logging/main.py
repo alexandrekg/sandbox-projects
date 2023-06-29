@@ -21,5 +21,5 @@ if __name__ == "__main__":
     logging.basicConfig(level=args.loglevel)
     blah()
 
-# python main.py -ll DEBUG
-# python main.py -ll INFO
+# python cpu-load-example.py -ll DEBUG
+# python cpu-load-example.py -ll INFO
