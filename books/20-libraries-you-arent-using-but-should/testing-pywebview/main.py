@@ -17,4 +17,5 @@ def root():
 
 
 if __name__ == "__main__":
-    root()
+    webview.create_window("Not a browser, honest!", "http://localhost:8080",
+                          width=800, height=600, resizable=False)
