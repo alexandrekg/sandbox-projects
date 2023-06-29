@@ -33,7 +33,8 @@ with doc:
                 with div(cls='dropdown'):
                     with button(cls="btn btn-default dropdown-toggle",
                                 type="button", data_toggle='dropdown'):
-    span('Dropdown') span(cls='caret')
-    items = ('Action', 'Another action',
-    'Yet another action')
-    ul((li(a(x, href='#')) for x in items), cls='dropdown-menu')
+                      span('Dropdown')
+                      span(cls='caret')
+                    items = ('Action', 'Another action', 'Yet another action')
+                    ul((li(a(x, href='#')) for x in items),
+                       cls='dropdown-menu')
