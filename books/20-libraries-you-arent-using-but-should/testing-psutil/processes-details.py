@@ -13,6 +13,7 @@ while True:
     info = p.memory_full_info()
     # Convert to MB
     memory = info.uss / 1024 / 1024
+    # The type of memory shown here is the `unique set size`, which is the real memory released when that process terminates
     print('Memory used: {:.2f} MB'.format(memory))
     if memory > 40:
         print('Memory too big! Exiting.')
