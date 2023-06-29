@@ -10,6 +10,8 @@ bootswatch = 'https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/'
 
 doc = dominate.document()
 
+
+@route('/')
 def root():
     print('Hi')
 
