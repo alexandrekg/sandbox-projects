@@ -8,6 +8,7 @@ from bottle import route, run, template
 bootstrap = 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/'
 bootswatch = 'https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/'
 
+doc = dominate.document()
 
 def root():
     print('Hi')
