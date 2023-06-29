@@ -21,7 +21,8 @@ with doc.head:
 with doc:
     with div(cls='container'):
         with h1():
-            span(cls='glyphicon glyphicon-map-marker') span('My Heading')
+            span(cls='glyphicon glyphicon-map-marker')
+            span('My Heading')
         with div(cls='row'):
             with div(cls='col-sm-6'):
                 p('{{body}}')
