@@ -38,3 +38,9 @@ with doc:
                     items = ('Action', 'Another action', 'Yet another action')
                     ul((li(a(x, href='#')) for x in items),
                        cls='dropdown-menu')
+            with div(cls='row'):
+                h3('Progress:')
+            with div(cls='progress'):
+                with div(cls='progress-bar', role='progressbar',
+                         style='width: 60%;'):
+                    span('60%')
