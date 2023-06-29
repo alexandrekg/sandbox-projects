@@ -1,6 +1,3 @@
-
-
-
 def root():
     print('Hi')
 
