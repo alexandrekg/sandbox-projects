@@ -44,3 +44,20 @@ with doc:
                 with div(cls='progress-bar', role='progressbar',
                          style='width: 60%;'):
                     span('60%')
+
+@route('/')
+def root():
+    word = lambda: ''.join(
+        choice(ascii_letters) for i in range(randint(2, 10)))
+    nih_lorem = ' '.join(word() for i in range(50))
+    return template(str(doc), body=nih_lorem)
+
+if __name__ == '__main__':
+    import threading
+    thread = threading.Thread(
+        target=run, kwargs=dict(host='localhost', port=8080), daemon=True)
+    thread.start()
+
+    webview.create_window(
+        "Not a browser, honest!", "http://localhost:8080",
+        width=800, height=600, resizable=False)
