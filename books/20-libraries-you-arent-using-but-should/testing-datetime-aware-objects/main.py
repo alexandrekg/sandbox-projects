@@ -1,8 +1,8 @@
-from datetime import datetime
+from datetime import datetime, date
 
 
 def main():
-    print('Hi')
+    print(datetime.now())
 
 
 if __name__ == "__main__":
