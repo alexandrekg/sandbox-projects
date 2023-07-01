@@ -1,6 +1,9 @@
+from datetime import datetime, timedelta
+
 
 def naive_date():
-    print('Hi')
+    naive_datetime = datetime(2023, 7, 1, 12, 0, 0)
+    print(naive_datetime)
 
 
 if __name__ == "__main__":
