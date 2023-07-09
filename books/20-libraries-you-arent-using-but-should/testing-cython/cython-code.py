@@ -1,3 +1,5 @@
+import array
+
 
 def main():
     pass
