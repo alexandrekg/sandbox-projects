@@ -2,7 +2,7 @@ import array
 
 
 def main():
-    pass
+    cdef int n = int(1e8)
 
 
 if __name__ == "__main__":
