@@ -4,11 +4,14 @@ def binary_search(sorted_array, item):
     high = len(sorted_array) - 1
     
     while low <= high:    
-        mid = (low + high)
+        mid = round((low + high) / 2)
         guess = sorted_array[mid]
         if guess < item:
             low = mid + 1
             print(low)
+        if guess > item:
+            high = mid - 1
+            print(high)
         if guess == item:
             return mid    
         else:
