@@ -8,10 +8,8 @@ def binary_search(sorted_array, item):
     
     if guess < item:
         low = mid + 1
-        
-    print('Total guesses: ', total_guesses)
 
 
 if __name__ == "__main__":
-    num_array = [i for i in range(101)]
-    binary_search(num_array, 99)
+    num_array = [1, 3, 5, 7, 9]
+    print(binary_search(num_array, 3))
