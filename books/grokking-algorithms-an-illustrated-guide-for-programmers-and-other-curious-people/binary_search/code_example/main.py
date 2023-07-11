@@ -3,12 +3,16 @@ def binary_search(sorted_array, item):
     low = 0
     high = len(sorted_array) - 1
     
-    mid = (low + high)
-    guess = sorted_array[mid]
-    if guess == item:
-        return mid    
-    if guess < item:
-        low = mid + 1
+    while low <= high:    
+        mid = (low + high)
+        guess = sorted_array[mid]
+        if guess < item:
+            low = mid + 1
+            print(low)
+        if guess == item:
+            return mid    
+        else:
+            return None
 
 
 if __name__ == "__main__":
