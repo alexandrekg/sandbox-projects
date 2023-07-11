@@ -1,9 +1,9 @@
 
 def binary_search(sorted_array, item):
     low = 0
-    high = len(list) - 1
-    mid = (low + high) / 2
-    guess = list[mid]
+    high = len(sorted_array) - 1
+    mid = round((low + high) / 2)
+    guess = sorted_array[mid]
     total_guesses = 0
     
     if guess < item:
