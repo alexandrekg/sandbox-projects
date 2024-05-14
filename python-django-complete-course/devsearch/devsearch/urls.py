@@ -1,16 +1,9 @@
 from django.contrib import admin
-from django.urls import path
-from django.http import HttpResponse
+from django.urls import path, include
 
-def projects(request):
-    return HttpResponse('Here are our projects')
-    
-def project(request, pk):
-    return HttpResponse('Single project!' + ' ' + str(pk))
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('projects/', projects, name="projects"),
-    path('project/<str:pk>/', project, name="project")
+    path('', include('projects.urls'))
 ]
