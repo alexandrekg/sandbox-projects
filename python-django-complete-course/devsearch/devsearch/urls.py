@@ -5,12 +5,12 @@ from django.http import HttpResponse
 def projects(request):
     return HttpResponse('Here are our projects')
     
-def project(request):
-    return HttpResponse('Single project!')
+def project(request, pk):
+    return HttpResponse('Single project!' + ' ' + str(pk))
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('projects/', projects, name="projects"),
-    path('project/', project, name="project")
+    path('project/<str:pk>/', project, name="project")
 ]
